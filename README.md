@@ -1,5 +1,5 @@
-# Learning SLD 3
-A simple repo to get started with SLD 3.
+# Learning SDL 3
+A simple repo to get started with SDL 3.
 
 ## Resources used:
 * [SDL Tutorials](https://wiki.libsdl.org/SDL3/Tutorials)
