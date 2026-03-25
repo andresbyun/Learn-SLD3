@@ -59,17 +59,17 @@ SDL_AppResult SDL_AppEvent(void* appstate, SDL_Event* event) {
         switch (event->key.key) {
         case SDLK_ESCAPE: // Exit with Escape key
             return SDL_APP_SUCCESS;
-        case SDLK_UP:
-            bg_color = glm::clamp(bg_color + glm::vec3(0.05f, 0.f, 0.f), glm::vec3(0), glm::vec3(1)); // Make background slightly more red with Up key
+        case SDLK_UP: // Make background slightly more red with Up key
+            bg_color = glm::clamp(bg_color + glm::vec3(0.05f, 0.f, 0.f), glm::vec3(0), glm::vec3(1));
             break;
-        case SDLK_LEFT:
-            bg_color = glm::clamp(bg_color + glm::vec3(0.f, 0.05f, 0.f), glm::vec3(0), glm::vec3(1)); // Make background slightly more green with Left key
+        case SDLK_LEFT: // Make background slightly more green with Left key
+            bg_color = glm::clamp(bg_color + glm::vec3(0.f, 0.05f, 0.f), glm::vec3(0), glm::vec3(1));
             break;
-        case SDLK_RIGHT:
-            bg_color = glm::clamp(bg_color + glm::vec3(0.f, 0.f, 0.05f), glm::vec3(0), glm::vec3(1)); // Make background slightly more blue with Right key
+        case SDLK_RIGHT: // Make background slightly more blue with Right key
+            bg_color = glm::clamp(bg_color + glm::vec3(0.f, 0.f, 0.05f), glm::vec3(0), glm::vec3(1));
             break;
-        case SDLK_DOWN:
-            bg_color = glm::vec3(0.2f, 0.2f, 0.2f); // Reset background with Down key
+        case SDLK_DOWN: // Reset background with Down key
+            bg_color = glm::vec3(0.2f, 0.2f, 0.2f);
             break;
         }
         break;
